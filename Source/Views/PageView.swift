@@ -1,18 +1,18 @@
 import UIKit
-import SDWebImage
+import Kingfisher
 
 protocol PageViewDelegate: AnyObject {
 
   func pageViewDidZoom(_ pageView: PageView)
-  func remoteImageDidLoad(_ image: UIImage?, imageView: SDAnimatedImageView)
+  func remoteImageDidLoad(_ image: UIImage?, imageView: AnimatedImageView)
   func pageView(_ pageView: PageView, didTouchPlayButton videoURL: URL)
   func pageViewDidTouch(_ pageView: PageView)
 }
 
 class PageView: UIScrollView {
 
-  lazy var imageView: SDAnimatedImageView = {
-    let imageView = SDAnimatedImageView()
+  lazy var imageView: AnimatedImageView = {
+    let imageView = AnimatedImageView()
     imageView.contentMode = .scaleAspectFit
     imageView.clipsToBounds = true
     imageView.isUserInteractionEnabled = true

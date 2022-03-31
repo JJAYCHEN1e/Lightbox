@@ -9,12 +9,12 @@ let package = Package(
             targets: ["Lightbox"]),
     ],
     dependencies: [
-      .package(url: "https://github.com/SDWebImage/SDWebImage.git", from: "5.1.0")
+      .package(url: "https://github.com/onevcat/Kingfisher", from: "7.2.0")
     ],
     targets: [
         .target(
             name: "Lightbox",
-            dependencies: ["SDWebImage"],
+            dependencies: ["Kingfisher"],
             path: "Source"
             )
     ],

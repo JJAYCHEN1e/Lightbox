@@ -1,5 +1,5 @@
 import UIKit
-import SDWebImage
+import Kingfisher
 
 open class LightboxImage {
 
@@ -33,7 +33,7 @@ open class LightboxImage {
     self.videoURL = videoURL
   }
 
-  open func addImageTo(_ imageView: SDAnimatedImageView, completion: ((UIImage?) -> Void)? = nil) {
+  open func addImageTo(_ imageView: AnimatedImageView, completion: ((UIImage?) -> Void)? = nil) {
     if let image = image {
       imageView.image = image
       completion?(image)

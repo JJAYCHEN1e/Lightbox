@@ -29,17 +29,8 @@ class ViewController: UIViewController {
   
     @objc func showLightbox() {
         let images = [
-            LightboxImage(imageURL: URL(string: "https://media.giphy.com/media/Ku65904QQe4yez448B/giphy.gif")!),
-            LightboxImage(imageURL: URL(string: "https://media.giphy.com/media/lQDLwWUMPaAHvh8pAG/giphy.gif")!),
-            LightboxImage(imageURL: URL(string: "https://media.giphy.com/media/ontKwPWJxARsuKaKqJ/giphy.gif")!),
-            LightboxImage(
-                image: UIImage(named: "photo1")!,
-                text: "Photography is the science, art, application and practice of creating durable images by recording light or other electromagnetic radiation, either electronically by means of an image sensor, or chemically by means of a light-sensitive material such as photographic film"
-            ),
-            
+            LightboxImage(imageURL: URL(string: "https://upload.wikimedia.org/wikipedia/commons/2/2c/Rotating_earth_%28large%29.gif")!),
             LightboxImage(imageURL: URL(string: "https://via.placeholder.com/300.png/09f/fff")!),
-            
-            
             LightboxImage(
                 image: UIImage(named: "photo2")!,
                 text: "Emoji 😍 (/ɪˈmoʊdʒi/; singular emoji, plural emoji or emojis;[4] from the Japanese 絵文字えもじ, pronounced [emodʑi]) are ideograms and smileys used in electronic messages and web pages. Emoji are used much like emoticons and exist in various genres, including facial expressions, common objects, places and types of weather 🌅☔️💦, and animals 🐶🐱",
@@ -48,8 +39,7 @@ class ViewController: UIViewController {
             LightboxImage(
                 image: UIImage(named: "photo3")!,
                 text: "A lightbox is a translucent surface illuminated from behind, used for situations where a shape laid upon the surface needs to be seen with high contrast."
-            ),
-            LightboxImage(imageURL: URL(string: "https://c.tenor.com/kccsHXtdDn0AAAAC/alcohol-wine.gif")!)
+            )
         ]
         
         let controller = LightboxController(images: images)

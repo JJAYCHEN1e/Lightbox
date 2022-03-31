@@ -14,7 +14,7 @@
 		44E6A65C2495BFD400543CF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E6A65B2495BFD400543CF0 /* ViewController.swift */; };
 		44E6A6652495C0EB00543CF0 /* Lightbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D523B0A91C43AA2A001AD1EC /* Lightbox.framework */; };
 		44E6A6662495C0EB00543CF0 /* Lightbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D523B0A91C43AA2A001AD1EC /* Lightbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		85CB007027B16C6900A47BB3 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 85CB006F27B16C6900A47BB3 /* SDWebImage */; };
+		63DA4FCE27F5A7B700F4FA6E /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 63DA4FCD27F5A7B700F4FA6E /* Kingfisher */; };
 		D22006741DFB4D9700E92898 /* Lightbox.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D22006731DFB4D9700E92898 /* Lightbox.bundle */; };
 		D2258CC4215CD035005A9A1C /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2258CC3215CD035005A9A1C /* Color+Extensions.swift */; };
 		D2D71BBC1D54DA77006AB907 /* AssetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D71BBB1D54DA77006AB907 /* AssetManager.swift */; };
@@ -95,7 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85CB007027B16C6900A47BB3 /* SDWebImage in Frameworks */,
+				63DA4FCE27F5A7B700F4FA6E /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,7 +245,7 @@
 			);
 			name = "Lightbox-iOS";
 			packageProductDependencies = (
-				85CB006F27B16C6900A47BB3 /* SDWebImage */,
+				63DA4FCD27F5A7B700F4FA6E /* Kingfisher */,
 			);
 			productName = Lightbox;
 			productReference = D523B0A91C43AA2A001AD1EC /* Lightbox.framework */;
@@ -281,7 +281,7 @@
 			);
 			mainGroup = D523B09F1C43AA2A001AD1EC;
 			packageReferences = (
-				85CB006E27B16C6900A47BB3 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				63DA4FCC27F5A7B700F4FA6E /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = D523B0AA1C43AA2A001AD1EC /* Products */;
 			projectDirPath = "";
@@ -636,21 +636,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		85CB006E27B16C6900A47BB3 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+		63DA4FCC27F5A7B700F4FA6E /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
+				minimumVersion = 7.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		85CB006F27B16C6900A47BB3 /* SDWebImage */ = {
+		63DA4FCD27F5A7B700F4FA6E /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 85CB006E27B16C6900A47BB3 /* XCRemoteSwiftPackageReference "SDWebImage" */;
-			productName = SDWebImage;
+			package = 63DA4FCC27F5A7B700F4FA6E /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
