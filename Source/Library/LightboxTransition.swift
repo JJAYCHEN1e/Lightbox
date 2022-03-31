@@ -60,6 +60,8 @@ class LightboxTransition: UIPercentDrivenInteractiveTransition {
       if percentage > 0.1 {
         finish()
         guard let controller = lightboxController else { return }
+          
+        controller.dismiss(animated: true, completion: nil)
 
         controller.headerView.alpha = 0
         controller.footerView.alpha = 0
@@ -69,7 +71,6 @@ class LightboxTransition: UIPercentDrivenInteractiveTransition {
           controller.view.alpha = 0
           controller.view.backgroundColor = UIColor.black.withAlphaComponent(0)
           }, completion: { _ in })
-        controller.dismiss(animated: true, completion: nil)
       } else {
         cancel()
 
