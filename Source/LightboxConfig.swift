@@ -19,7 +19,6 @@ public class LightboxConfig {
 
   public static var loadImage: (AnimatedImageView, URL, ((UIImage?) -> Void)?) -> Void = { (imageView, imageURL, completion) in
       imageView.kf.setImage(with: imageURL) { result in
-          print(imageURL)
           switch result {
           case .success(let value):
               completion?(value.image)
