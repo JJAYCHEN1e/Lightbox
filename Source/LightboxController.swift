@@ -149,14 +149,12 @@ open class LightboxController: UIViewController {
 
   fileprivate var initialImages: [LightboxImage]
   fileprivate let initialPage: Int
-  let dismissAction: (() -> Void)?
 
   // MARK: - Initializers
 
-    public init(images: [LightboxImage] = [], startIndex index: Int = 0, dismissAction: (() -> Void)? = nil) {
+  public init(images: [LightboxImage] = [], startIndex index: Int = 0) {
     self.initialImages = images
     self.initialPage = index
-    self.dismissAction = dismissAction
     super.init(nibName: nil, bundle: nil)
   }
 

@@ -62,11 +62,7 @@ class LightboxTransition: UIPercentDrivenInteractiveTransition {
         guard let controller = lightboxController else { return }
           
         if controller.presented {
-          if let dismissAction = controller.dismissAction {
-            dismissAction()
-          } else {
-            controller.dismiss(animated: true, completion: nil)
-          }
+          controller.dismiss(animated: true, completion: nil)
           return
         }
         
