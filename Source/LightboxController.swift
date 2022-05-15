@@ -176,7 +176,7 @@ open class LightboxController: UIViewController {
     view.backgroundColor = UIColor.black
     transitionManager.lightboxController = self
     transitionManager.scrollView = scrollView
-    transitioningDelegate = transitionManager
+//    transitioningDelegate = transitionManager
 
     [scrollView, overlayView, headerView, footerView].forEach { view.addSubview($0) }
     overlayView.addGestureRecognizer(overlayTapGestureRecognizer)
